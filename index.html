@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content='width=device-width, initial-scale=1'>
+    <meta name="description" content="Услуги frontend-разработчика. Адаптивная верстке лендинг-страниц и сайтов любой сложности под все браузеры и устройства.">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/main-style.css">
+    <script src="script/script.js" defer></script>
+
+</head>
+
+<body>
+    <header class="header">
+        <section class="header-section fixed-container">
+            <h1 class="heading border-style">Список задач</h1>
+        </section>
+    </header>
+
+    <main class="main">
+        <div class="fixed-container">
+            <ul class="task-container border-style">
+                <li class="task-point">
+                    <label class="task-point__text" tabindex="1"><input type="checkbox" class="task-checkbox">Сделать зарядку</label>
+
+                    <div class="task-point__close" tabindex="2" aria-label="кнопка удаления записи">
+                        <span class="task-point__close-item"></span>
+                        <span class="task-point__close-item"></span>
+                    </div>
+                </li>
+
+                <li class="task-point">
+                    <label class="task-point__text" tabindex="3"><input type="checkbox" class="task-checkbox">Закончить домашнее задание для Skillbox</label>
+                    <p class="task-point__det">Модуль 9. JavaScript в браузере; DOM</p>
+
+                    <div class="task-point__close" tabindex="4" aria-label="кнопка удаления записи">
+                        <span class="task-point__close-item"></span>
+                        <span class="task-point__close-item"></span>
+                    </div>
+                </li>
+
+                <li class="task-point">
+                    <label class="task-point__text" tabindex="5"><input type="checkbox" class="task-checkbox">Позвонить тете</label>
+
+                    <div class="task-point__close" tabindex="6" aria-label="кнопка удаления записи">
+                        <span class="task-point__close-item"></span>
+                        <span class="task-point__close-item"></span>
+                    </div>
+                </li>
+            </ul>
+
+            <form action="#" class="task-form border-style">
+                <label for="text-input" class="task-label visually-hidden">Текст задачи</label>
+                <input id="text-input" class="task-text  task-form__input border-style" type="text" placeholder="Что нужно сделать?">
+
+                <label for="text-det" class="task-label visually-hidden">Детали</label>
+                <textarea name="" id="text-det" class="task-text task-form__det border-style" cols="30" rows="10" placeholder="Какие детали нужно учесть?"></textarea>
+
+                <button type="button" class="new-task-btn border-style">Добавить задачу</button>
+                
+                <div class="errow-mes border-style">
+                    Это поле не может быть пустым.
+                </div>
+            </form>
+        </div>
+
+    </main>
+
+    <footer class="footer"><span>Дорогу осилит идущий.</span></footer>
+</body></html>

@@ -1,0 +1,114 @@
+html
+{
+    box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after
+{
+    box-sizing: inherit;
+}
+
+:focus
+{
+    outline: none;
+}
+
+body
+{
+    font-family: 'Arial';
+    font-size: 16px;
+
+    position: relative;
+
+    min-width: 320px;
+    min-height: 100vh;
+    margin: 0;
+    padding-bottom: 50px;
+
+    color: black;
+    background-color: #f2f3e9;
+}
+
+a
+{
+    text-decoration: none;
+
+    color: inherit;
+}
+
+img
+{
+    max-width: 100%;
+    height: auto;
+}
+
+figure
+{
+    font-size: 0;
+
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+ul
+{
+    margin: 0;
+    padding: 0;
+
+    list-style: none;
+}
+
+h1,
+h2,
+h3,
+p
+{
+    margin: 0;
+    padding: 0;
+}
+
+.fixed-container
+{
+    width: 960px;
+    margin: 0 auto;
+}
+
+.border-style
+{
+    border-radius: 5px;
+}
+
+@media (max-width: 1024px)
+{
+    .fixed-container
+    {
+        width: 100%;
+    }
+}
+
+@media (max-width: 370px)
+{
+    body
+    {
+        font-size: 14px;
+    }
+}
+
+.visually-hidden
+{
+    position: absolute !important;
+
+    overflow: hidden;
+    clip: rect(1px 1px 1px 1px);
+    /* IE6, IE7 */
+    clip: rect(1px, 1px, 1px, 1px);
+
+    width: 1px !important;
+    height: 1px !important;
+    padding: 0 !important;
+
+    border: 0 !important;
+}
